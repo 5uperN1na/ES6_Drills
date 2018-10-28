@@ -30,14 +30,23 @@ ES6('Jane', 'Lego Movie');
 let ES62 = (name = 'Joe', movie = 'The Room') => console.log(`My name is ${name} and my favorite movie is: ${movie}.`);
 ES62('Jim', 'Taken');
 
-
-let getFirstName = (n = 'Paula Suarez') => {
+//Arrow function usin split method
+let getFirstName = (n) => {
     let fName = n.split(' ');
-    return fName[0];
     console.log(fName[0]);
-}
 
-getFirstName();
+
+};
+
+//Calling function and passing first and last name
+getFirstName('John Doe');
+
+//Arrow function using split method using concise body
+let getFN = (x) => f = x.split(' ');
+
+//Calling function and passing first and last name.  Console log the result.
+getFN('Jane Smith');
+console.log(f[0]);
 
 
 //Concise body example
@@ -50,6 +59,8 @@ let add = (a, b) => {
 };
 let sum = add(5, 4);
 console.log(sum);
+
+
 
 
 
