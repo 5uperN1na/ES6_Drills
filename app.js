@@ -82,9 +82,6 @@ console.log(sq)
 let getAnswer = (f, g) => ({
     product: f * g,
     square: Math.pow(f, g)
-
-
-
 });
 
 //Calling function and passing 3 and 3 and storing result in answer
@@ -94,6 +91,34 @@ let calculation = getAnswer(3, 3);
 console.log(`${calculation.square}`);
 console.log(`${calculation.product}`);
 
+//SPREAD SYNTAX
 
+//function with  3 parameters: name, location, favFood
+function getDetails(name, location, favFood) {
+    console.log(name + location + favFood);
+}
+
+//store array values in a variable
+let details = ['Paula', 'Dallas', 'Pizza'];
+
+//call the function spreading array in the variable
+getDetails(...details);
+
+//Create a variable that has a value of your name.
+let first = 'Paula';
+
+//Write a function that takes a parameter, name the parameter whatever you’d like.
+function spreadFirst() {
+
+    //Using spread syntax, create a variable in the function that takes the string you pass into the function and spreads it into an array.
+    let chars = [...first];
+    //Using a for loop, loop through the spread string and console log each value of the string.
+    for (i = 0; i < chars.length; i++) {
+        console.log(chars[i]);
+    }
+}
+
+//call function to spread string into array
+spreadFirst();
 
 
