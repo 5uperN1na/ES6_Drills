@@ -57,9 +57,42 @@ console.log(f[0]);
 let add = (a, b) => {
     return a + b;
 };
+
+//calling function and passing 5 and 4 and storing result in sum
 let sum = add(5, 4);
 console.log(sum);
 
+//Arrow function with concise body shorthand and returned object literal 
+let getResults = (c, d) => ({
+    product: c * d,
+    power: Math.pow(c, d)
+
+});
+
+//Calling function and passing 2 and 2 and storing result in answer
+let answer = getResults(2, 2);
+console.log(answer);
+
+//arrow function test
+let square = x => Math.pow(x, 2);
+let sq = square(4);
+console.log(sq)
+
+//Arrow function with concise body shorthand and returned object literal 
+let getAnswer = (f, g) => ({
+    product: f * g,
+    square: Math.pow(f, g)
+
+
+
+});
+
+//Calling function and passing 3 and 3 and storing result in answer
+let calculation = getAnswer(3, 3);
+
+//Log result with template literal
+console.log(`${calculation.square}`);
+console.log(`${calculation.product}`);
 
 
 
